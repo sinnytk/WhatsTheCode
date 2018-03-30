@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body
+{
+  margin: 0; /*used to create space around elements, outside of any defined borders.*/
+  padding: 0; /*generates space around an element's content, inside of any defined borders.*/
+}
+#container /*serves as background and contains all the contents.*/ 
+{
+    width: 100%; /*specifies the width for the division. */
+    border: 0.01px #E67E22; /* a short hand property for border-width, border-style and border-color.*/ 
+}
+
+header /*represents a container for introductory content. */
+{
+    font-family: Arial; /* consists of related fonts.*/
+    font-size: 15px;/*specifies how large a font will be displayed*/
+    font-style: normal;/*specifies the style of text.*/
+    font-variant: normal;/*selects a normal or small-caps face from a font family.*/
+    line-height: 20px; /*sets the amount of space used for lines.*/
+    padding: 0.02px; /*generates space around an element's content, inside of any defined borders.*/
+    color: white;/* specefies the color of text.*/
+    background-color: #E05800;/*specifies background-color.*/
+    clear: left; /* used to clear any preexisting alignment.*/
+    text-align: left;/* used to allign text.*/
+    width: 100%; /*specifies the width for the division. */
+}
+footer /* defines a footer, typically contains authorship information.*/
+{ 
+ background-color: #E05800;/* specifies background-color*/
+ width: 100%; /*specifies the width for the division. */
+ display: inline-block; /* sets how the element is displayed*/
+ text-align: center;/* alligns the text.*/
+ margin-top: 4.4%;/* sets the margin area on the top of the element.*/
+ position: absolute;/*specifies how an element is positioned in a document.*/
+ height: 13.8%;/*specifies the height of a section,*/
+}
+h3 /* this is a heading.*/
+{
+  color: white; /*specifies the color.*/
+  font-size: 25px;/* specifies how large a font will be displayed.*/ 
+}
+#logo /* a division, contains attributes of a section.*/
+{
+   width: 100%; /*specifies the width for the division. */
+    border: 0.01px; /* a short hand property for border-width, border-style and border-color.*/
+    background: url(http://lms.dsu.edu.pk/theme/image.php/essential/theme/1507628713/bg/header) repeat; /* link for background.*/
+    height: 113px; /*specifies the height of a section,*/
+}
+section
+{
+    height: 600px; /*specifies the height of a section,*/
+}
+#slider{
+  height: 500px; /*specifies the height of a section,*/
+  width: 700px; /*specifies the width for the division. */
+  margin: 10px auto; /*used to create space around elements, outside of any defined borders.*/
+  position: relative; /*specifies how an element is positioned in a document.*/
+}
+</style>
+<script type="text/javascript"> 
+  var i = 0;      /* variable assingment.*/
+  var images = [];  /* array assignment.*/
+  var time = 1500;  /* time between image switch.*/
+images[0] = "image1.png"; /* image 1*/
+images[1] = "image2.png"; /* image 2*/
+images[2] = "image3.png"; /* image 3*/
+images[3] = "image4.png"; /* image 4*/
+function changeImg()/*function for change images*/
+{
+  document.slide.src = images[i];/*image sourse*/  
+  if(i < images.length - 1)/* check if index is under max*/
+  {   
+    i++; /* add 1 to index*/
+  } else {    
+    i = 0;/* reset to O */
+  }
+  setTimeout("changeImg()", time);/*run function every x seconds*/
+}
+window.onload=changeImg;/*Run function when page loads*/
+</script>
+</head>
+<body> 
+<div id="container">
+<header> 
+   <h2 style="margin-left: 5%; font-weight: 400">DSU LMS</h2>
+</header>
+<div id="logo">
+ <img src="logo.png" height="100px" width="320px" style="margin-left: 5%;">
+ <hr>
+</div>
+<section>
+  <div id="slider">
+    <img name="slide" width="600" height="500">
+  </div>
+  </section>
+<footer>
+  <hr style="border: 0.6px solid black; width: 50%; margin-top: 2%"><h3>&copy2017 DHA SUFFA UNIVERSITY</h3>
+</footer>
+</div>
+</body>
+</html>

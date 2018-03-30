@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> ICT Semester Project - Temp Poise</title>
+<style>
+	html{
+	font-family:sans-serif
+}
+
+ul{
+	list-style:none;
+	margin:0;padding:0
+}
+
+h3{
+	margin:0;padding:0
+}
+
+p{
+	margin:0;padding:0
+}
+
+body{
+	font-size:13px;
+	line-height:1.8;
+	color: black;
+}
+
+.menu{
+	text-align:center
+}
+
+.page-content{
+	border-spacing:1px
+}
+
+.container{
+	margin: auto;
+	padding:0px;
+	width:1140px;
+	box-sizing:border-box;}*,::before{-webkit-box-sizing:border-box;}
+
+.row{
+	margin-left:-15px;
+	margin-right:-15px
+}
+.row:after{
+	content:" ";
+	display:table;
+	clear:both
+}
+
+.clearfix:after{
+	content:" ";
+	display:block;
+	clear:both;
+	}[class*=col-]{position:relative;min-height:1px;padding:0 15px}
+
+.image{
+	display:block;
+	width:100%
+}
+
+.col-xlarge-8{
+	width:66%;
+	float:left
+	}
+
+.col-xlarge-6{
+	width:50%;
+	float:left
+}
+.col-xlarge-4{
+	width:33%;
+	float:left
+}
+
+.col-xlarge-8 h3 a{
+	font-size:21px;
+	line-height:29px
+}
+.col-xlarge-6 h3 a{
+	font-size:21px;
+	line-height:29px
+}
+
+.font-crimson-reg{
+	font-family:'Crimson Text',serif;
+	font-weight:400;
+}
+
+.primary-button{
+	display:inline-block;
+	font-size:11px;
+	color:#d29aa1;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	background-color:#ffe9ec;
+	border:1px solid;
+	border-radius:30px;
+	padding:10px 25px
+} 
+ 
+.primary-button:hover{
+	background-color:#e28694;
+	color:#fff;
+}
+ 	
+#header-search input[type=text]{
+	margin-top:5px;
+	margin-left:50px;
+	border:0;
+	float:left;
+	height:20px;
+	font-size:15px;
+	line-height:14px;	
+}
+
+#header-search .fa{
+	float:left;
+	font-size:15px;
+	margin-top:5px;
+}
+ 	
+#header-navigation{
+	padding:0;
+	background-color:#ffe9ec;
+	border:1px solid #ffe9ec;	
+}
+
+.menu li{
+	display:inline-block
+}
+.menu .menu-item a{
+	font-size:12px;
+	line-height:20px;
+	letter-spacing:1.5px;
+	text-transform:uppercase;
+	margin:0px;
+	padding:15px;
+	text-decoration:none;
+	display:inline-block;
+	clear:both;
+}
+.sub-menu{
+	position:absolute;
+	visibility:hidden;
+}
+ 
+#footer-social li{
+	display:inline-block;
+	line-height: 60px;
+
+}
+#footer-social-inner{
+	background-color:#ffe9ec;
+	text-align:center;
+}
+#footer-social li a{
+	font-size:11px;
+	color:#e28694;
+	line-height:15px;
+	text-align:center;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	margin:0px;
+	padding:15px;
+	text-decoration: none;
+}
+
+
+#footer-bottom{
+	font-size:12px;
+	color:#757575;
+	margin-top: 15px;
+	text-align:center;
+	letter-spacing:.5px
+	}
+
+
+#main-content{
+	padding-top:40px
+}
+
+.newsletter-section{
+	margin-bottom:40px
+}
+
+.page-newsletter-text{
+	float:left;
+}
+
+.first{
+	font-family:'Crimson Text',serif;
+	font-size:20px;
+	line-height:16px
+}
+.second{
+	font-family:'Open Sans',sans-serif;
+	margin-top:13px
+}
+
+.page-newsletter-form{
+	float:right;
+	margin-top:5px
+}
+
+input{
+	font-family:'Crimson Text',serif
+}
+
+.page-newsletter input[type=email]{
+	width:300px;
+	border:1px solid #fff;
+	font-size:16px;
+	color: black;
+	line-height:25px
+}
+
+.sidebar-widget h3{
+	font-size:12px;
+	color:#757575;
+	line-height:30px;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	text-align:center;
+	margin-bottom:20px
+}
+
+.sidebar-widget input{
+	width:100%;
+	height:40px;
+	padding-left:15px;
+	border:1px;
+	font-family:'Crimson Text',serif;
+	font-size:16px
+}
+
+.sidebar-widget input[type=submit]{
+	font-size:11px;
+	color:#d29aa1;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:1.5px;
+	background-color:#ffe9ec;
+	border:0px;
+	border-radius:30px;
+	display:inline-block;
+	padding:10px;
+	margin: 25px;
+	font-family:Lato,sans-serif;
+}
+
+.widget_poise_latest_posts_widget h4{
+	font-size:17px;
+	font-family:'Crimson Text',serif;
+	color:#757575;
+	font-weight:100
+}
+
+.promo-box-item{
+	position:relative;
+	display:block;
+	margin-bottom:40px
+}
+
+.promo-item-inside{
+	color:#fff;
+	text-align:center;
+	position:absolute;
+	left: 0;
+	right: 0;
+}
+.promo-item-padding{
+	padding:12px;
+}
+
+.promo-inside-center{
+	top:40%
+	}
+
+.promo-item-inside h3{
+	font-family:'Crimson Text',serif;
+	font-weight:100;
+	font-size:21px;
+	line-height:22px;
+	display:inline-block;
+}
+
+.post-list-item{
+	margin-bottom:80px;
+}
+
+.post-list-item h3{
+	margin-bottom:10px
+}
+.post-list-item h3 a{
+	font-size:26px;
+	color: black;
+	text-decoration:none;
+}
+.post-list-item h3 a:hover{
+	color:#eabbc2
+}
+</style>
+	</head>
+
+<body class="page-template">
+	
+	<!-- Header Stars Here --> 
+	
+	<header id="site-header">
+		<div id="site-header-inner">
+			<div id="header-top">
+				<div class="container">
+					<form id="header-search" role="search" action="#">
+						<button type="submit" id="submit-button" class="primary-button">search
+							<i class="fa fa-search"></i>
+						</button>
+						<input type="text" placeholder="Type to Search..." class="font-crimson-reg" name="s" id="s" />
+					</form>							
+				</div>
+			</div>
+								
+				<div id="header-middle">
+					<div class="container">
+						<div class="medium-header-container clearfix">
+							<a href="#" id="site-logo">
+								<img src="img/logo.png" alt="Site Logo">
+							</a>							
+						</div>
+					</div>
+				</div>
+
+				<!-- navigation -->
+				<div id="header-navigation" class="nav-fixed">
+					<div class="container">
+						
+						<nav id="header-nav">
+							<ul id="nav-ul" class="menu font-lato-reg clearfix"><li class="menu-item"><a href="#">Home</a>
+	
+<li class="menu-item"><a href="#">Features</a>
+<ul  class="sub-menu">
+	<li class="menu-item"><a href="#">Layouts</a>
+</li>
+	<li class="menu-item"><a href="#">Header styles</a>
+</li>
+	<li class="menu-item"><a href="#">Post header</a>
+</li>
+	<li class="menu-item"><a href="#">Post sidebar</a>
+</li>
+	<li class="menu-item"><a href="#">Standard page</a>
+		<li class="menu-item"><a href="#">Content type</a>
+</li>
+</li>
+</ul>
+</li>
+
+<li class="menu-item"><a href="#">Categories</a>
+<ul  class="sub-menu">
+	<li class="menu-item"><a href="#">Post list style</a>
+</li>
+	<li class="menu-item"><a href="#">Page header</a>
+</li>
+	<li class="menu-item"><a href="#">Sidebar</a>
+</li>
+</ul>
+</li>
+<li class="menu-item"><a href="#">About</a>
+<ul  class="sub-menu">
+	<li class="menu-item"><a href="#">Sidebar</a>
+</li>
+	<li class="menu-item"><a href="#">Page header</a>
+</li>
+</ul>
+</li>
+<li class="menu-item"><a href="#">Contact</a>
+<ul  class="sub-menu">
+	<li class="menu-item"><a href="#">Sidebar</a>
+</li>
+	<li class="menu-item"><a href="#">Page header</a>
+</li>
+</ul>
+</li>
+</ul>						
+</nav>
+</div>
+</div>
+</div>
+</header>
+
+<!-- Header & Nav Closed Here -->
+
+	<section id="main-content">
+		<div class="container">
+			<ul class="row">
+				<li class="col-xlarge-4 col-medium-4">
+					
+						<a href="#" class="promo-box-item" target="_self">						
+							<div class="promo-box-hover"></div>
+													
+							<img src="img/placeholder_1.jpg" alt="" class="image" />
+
+								<div class="promo-item-inside font-opensans-reg promo-inside-center " >
+								<h3 style="background-color:#fff;max-width:80%;color:#111111" class="promo-item-padding">Food</h3>
+								</div>															
+						</a>						
+					</li>
+					
+									
+					<li class="col-xlarge-4 col-medium-4">
+						<a href="#" class="promo-box-item" target="_self">						
+							<div class="promo-box-hover"></div>
+								<img src="img/placeholder2.jpg" alt="" class="image" />
+									<div class="promo-item-inside font-opensans-reg promo-inside-center " >
+										<h3 style="background-color:#fff;max-width:80%;color:#111111" class="promo-item-padding">Lifestyle</h3>
+									</div>					
+						</a>						
+					</li>
+		
+					<li class="col-xlarge-4 col-medium-4">
+						<a href="#" class="promo-box-item" target="_self">						
+							<div class="promo-box-hover"></div>					
+								<img src="img/placeholder3.jpg" alt="" class="image" />
+								<div class="promo-item-inside font-opensans-reg promo-inside-center " >
+									<h3 style="background-color:rgba(255,255,255,0.9);max-width:80%;color:#111111" class="promo-item-padding" style="color:#111111">Travel</h3>
+								</div>							
+						</a>						
+					</li>			
+							
+			</ul>
+			
+		</div>
+	</section>
+
+<!-- Newsletter Section Starts Here -->
+
+	<section class="newsletter-section">
+		<div class="container">
+			
+			<div class="page-newsletter clearfix">
+				
+			 <form><div><div class="page-newsletter-text">
+	<p class="first hidden-sidebar">Join my newsletter</p>
+	<p class="second">Stay in touch by joining my weekly newsletter</p>
+</div>
+<div class="page-newsletter-form">
+	<input type="email" placeholder="Your email address"/>
+	<input type="submit" value="Subscribe" class="primary-button hov-bk" />
+</div>
+			</div>
+			
+		</div>
+	</section>
+
+<!-- Newsletter Section Ends Here -->
+
+		<!-- Page Content Starts Here-->
+
+	<!-- page content 1 Starts Here-->
+	
+		<div class="container">			
+			<div class="row">
+				<div class="col-xlarge-8">
+					<ul>				
+						<li>
+							<div class="post-list-item">                       
+								<a href="#">
+									<img src="img/placeholder4.jpg" alt="" class="image">
+								</a>
+																											
+									<h3 class="font-crimson-reg">
+										<a href="#">Creating Art With Food
+										</a>
+									</h3>
+										
+										<span>Nov 15, 2017</span>	
+							
+									<div class="page-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque nibh enim, quis euismod enim lacinia nec. Phasellus quam diam, semper in erat eu, efficitur molestie purus. Sed a elementum mi. Sed interdum mattis risus, sit amet eleifend ligula luctus ut. Sed ullamcorper lorem aliquam, tincidunt lorem et, ultrices est. Suspendisse eleifend dui odio, id&hellip;</p>
+								</div>
+									
+									<a href="#" class="primary-button">Read more</a>
+													
+							</div>
+						
+						</li>
+
+	<!-- page content 1 Ends Here-->	
+
+	<!-- page content 2 Starts Here-->
+					
+					<li class="col-xlarge-6">
+						<div class="post-list-item"> 
+							<a href="#">
+								<img src="img/placeholder5.jpg" alt="" class="image">
+							</a>															
+								<h3 class="font-crimson-reg">
+									<a href="#">Exploring Santorini</a>
+								</h3>	
+								<span>Nov 15, 2017</span>
+									<div class="page-content">
+									
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque nibh enim, quis euismod enim lacinia nec. Phasellus quam diam, semper in erat eu, efficitur molestie purus. Sed a elementum&hellip;</p>
+									</div>
+									<a href="#" class="primary-button">Read more</a>
+													
+						</div>	
+					</li>
+	<!-- page content 2 Ends Here-->
+	<!-- page content 3 Starts Here-->				
+					<li class="col-xlarge-6">
+						<div class="post-list-item">                            
+							<a href="#">
+								<img src="img/placeholder_1.jpg" alt="" class="image">
+							</a>
+							
+							<h3 class="font-crimson-reg">
+								<a href="#">Healthy Start To The Day</a>
+							</h3>
+								<span>Nov 15, 2017</span>
+									<div class="page-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque nibh enim, quis euismod enim lacinia nec. Phasellus quam diam, semper in erat eu, efficitur molestie purus. Sed a elementum&hellip;</p>
+									</div>
+														
+									<a href="#" class="primary-button">Read more</a>						
+						</div>
+					</li>
+
+	<!-- page content 3 Ends Here-->
+	<!-- page content 4 Starts Here-->								
+					<li class="col-xlarge-6">
+						<div class="post-list-item">                            
+							<a href="#">
+								<img src="img/placeholder6.jpg" alt="" class="image">
+							</a>
+								
+								<h3 class="font-crimson-reg">
+									<a href="#">Sweet Doughnuts</a>
+								</h3>
+								
+								<span>Nov 15, 2017</span>
+									<div class="page-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque nibh enim, quis euismod enim lacinia nec. Phasellus quam diam, semper in erat eu, efficitur molestie purus. Sed a elementum&hellip;</p>
+									</div>
+									
+									<a href="#" class="primary-button font-lato-reg hov-bk">Read more</a>
+													
+						</div>
+						
+					</li>
+					<!-- page content 4 Starts Here-->
+
+					<li class="col-xlarge-6">
+						<div class="post-list-item">
+							<a href="#">
+								<img src="img/placeholder3.jpg" alt="" class="image">
+							</a>
+								<h3 class="font-crimson-reg">
+									<a href="#">Afternoon Reading</a>
+								</h3>
+									
+								<span>Nov 15, 2017</span>
+									<div class="page-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque nibh enim, quis euismod enim lacinia nec. Phasellus quam diam, semper in erat eu, efficitur molestie purus. Sed a elementum&hellip;</p>
+									</div>
+														
+								<a href="#" class="primary-button font-lato-reg hov-bk">Read more</a>
+						</div>
+					</li>
+					
+					<!-- page content 4 Ends Here-->
+					<!-- page content 5 Starts Here-->
+
+					<li class="col-xlarge-6">
+						<div class="post-list-item">
+							<a href="#">
+								<img src="img/placeholder4.jpg" alt="" class="image">
+							</a>																	
+								
+								<h3 class="font-crimson-reg">
+									<a href="#">Summer Fruit Dessert</a>
+								</h3>
+									
+								<span>Nov 15, 2017</span>
+									<div class="page-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque nibh enim, quis euismod enim lacinia nec. Phasellus quam diam, semper in erat eu, efficitur molestie purus. Sed a elementum&hellip;</p>
+									</div>
+														
+									<a href="#" class="primary-button font-lato-reg hov-bk">Read more</a>
+						</div>
+					</li>
+					<!-- page content 5 Ends Here-->
+					<!-- page content 6 Starts Here-->
+				
+					<li class="col-xlarge-6">
+						<div class="post-list-item">
+							<a href="#">
+								<img src="img/placeholder6.jpg" alt="" class="image">
+							</a>																	
+								
+								<h3 class="font-crimson-reg">
+									<a href="#">Sweet Doughnuts</a>
+								</h3>
+									
+								<span>Nov 15, 2017</span>
+									<div class="page-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque nibh enim, quis euismod enim lacinia nec. Phasellus quam diam, semper in erat eu, efficitur molestie purus. Sed a elementum&hellip;</p>
+									</div>
+														
+									<a href="#" class="primary-button font-lato-reg hov-bk">Read more</a>
+						</div>
+					</li>
+				<!-- page content 6 Ends Here-->
+				<!-- page content 7 Starts Here-->	
+				<li class="col-xlarge-6">
+						<div class="post-list-item">
+							<a href="#">
+								<img src="img/placeholder7.jpg" alt="" class="image">
+							</a>																	
+								
+								<h3 class="font-crimson-reg">
+									<a href="#">Afternoon Reading</a>
+								</h3>
+									
+								<span>Nov 15, 2017</span>
+									<div class="page-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque nibh enim, quis euismod enim lacinia nec. Phasellus quam diam, semper in erat eu, efficitur molestie purus. Sed a elementum&hellip;</p>
+									</div>
+														
+									<a href="#" class="primary-button font-lato-reg hov-bk">Read more</a>
+						</div>
+					</li>
+				<!-- page content 7 Ends Here-->
+				<!-- page content 8 Starts Here-->	
+				<li class="col-xlarge-6">
+						<div class="post-list-item">
+							<a href="#">
+								<img src="img/placeholder3.jpg" alt="" class="image">
+							</a>																	
+								
+								<h3 class="font-crimson-reg">
+									<a href="#">Exploring Santorini</a>
+								</h3>
+									
+								<span>Nov 15, 2017</span>
+									<div class="page-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque nibh enim, quis euismod enim lacinia nec. Phasellus quam diam, semper in erat eu, efficitur molestie purus. Sed a elementum&hellip;</p>
+									</div>
+														
+									<a href="#" class="primary-button">Read more</a>
+						</div>
+					</li>
+
+				<!-- page content 8 Ends Here-->	
+
+	<div>
+		<section>
+			<div>
+				<a href="#">
+					<span class="primary-button">Older Posts</span></a>
+			</div>
+		</section>
+	</div>
+					
+	</div>
+
+	<!-- Page Content Ends Here-->
+				
+	<!-- sidebar Starts Here -->
+				<!-- About ME Starts Here -->
+	<div class="col-xlarge-4">
+		<div class="sidebar-widget">		
+			<h3 class="font-lato-reg">About me</h3>
+				
+				<div>
+			<img src="img/placeholder7.jpg" alt="About Me" class="image">
+				</div>
+				
+				<div class="page-content about-widget-center">
+				<p>Sed pellentesque nibh enim, quis euismod enim lacinia nec. Phasellus quam diam, semper in erat eu. Consectetur adipiscing elit. Sed pellentesque nibh enim, quis euismod enim lacinia nec.</p>
+				</div>
+				
+				
+        </div>
+
+        <!-- About ME Ends Here -->
+        <!-- Latest post Start Here -->
+
+        <div class="sidebar-widget widget_poise_latest_posts_widget">
+        	<h3>Latest posts</h3>		
+				<ul>
+					<li>
+						<a href="#">
+							<div class="row">
+								<div class="col-xlarge-4">
+									<img src="img/placeholder_1.jpg"class="image" />
+								</div>
+								
+								<div class="col-xlarge-8">
+									<h4>Creating Art With Food</h4>
+										<p style="margin-top: -20px;">Nov 15, 2017</p>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							<div class="row">
+								<div class="col-xlarge-4">
+									<img src="img/placeholder2.jpg"class="image" />
+								</div>
+								
+								<div class="col-xlarge-8">
+									<h4>Healthy Start To The Day</h4>
+										<p style="margin-top: -20px;">Nov 15, 2017</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<div class="row">
+								<div class="col-xlarge-4">
+									<img src="img/placeholder3.jpg"class="image" />
+								</div>
+								
+								<div class="col-xlarge-8">
+									<h4>Sweet Doughnuts</h4>
+										<p style="margin-top: -20px;">Nov 15, 2017</p>
+										<br>
+								</div>
+							</div>
+						</a>
+					</li>	
+				</ul>
+		</div>
+		
+		<!-- Latest post Ends Here -->	
+		<!-- Latest post 'Food' Starts Here -->				
+        
+    <div class="sidebar-widget">		
+		<a href="#" class="widget-promo-item">
+			<br><br>
+			<img src="img/placeholder2.jpg" class="image">
+				<div class="promo-item-inside">
+					<h4 class="font-crimson-reg">Food</h4>
+				</div>
+		</a>
+	</div>
+
+	<!-- Latest post 'Food' Ends Here -->
+	<!-- Sidebar 'Newsletter' Starts Here -->
+		
+	<div class="sidebar-widget widget_mc4wp_form_widget"><br><br><h3 class="font-lato-reg">Newsletter</h3>
+		<form>
+			<div class="page-newsletter-text">
+	<p class="first hidden-sidebar">Join my newsletter</p>
+	<p class="second">Stay in touch by joining my weekly newsletter</p>
+			</div>
+
+		<div class="page-newsletter-form">
+			<input type="email" name="EMAIL" placeholder="Your email address" />
+			<input type="submit" value="Subscribe" />
+		</div>
+	<br> <br>
+		</form>
+	</div>
+
+	<!-- Sidebar 'Newsletter' Ends Here -->
+	<!-- Sidebar 'Search' Starts Here -->
+	
+	<div class="sidebar-widget"><br><br><h3 class="font-lato-reg">Search</h3>
+		<form>
+			<input placeholder="Search">
+				<input type="submit" value="Search" />
+		</form>
+
+<br> <br>
+	</div>
+		</div>
+	</div>	
+</div>
+			<!-- Sidebar 'Search' Ends Here -->
+	<!-- sidebar Starts Here -->
+
+		<!-- footer Starts Here-->
+<footer>
+	<div id="footer-social">
+			<div class="container">
+				<div id="footer-social-inner">
+					<ul>
+						<li>
+							<a href="#" target="_blank">
+								<span>Facebook</span>
+							</a>
+						</li>
+					
+						<li>
+							<a href="#" target="_blank">
+								 <span>Twitter</span>
+							</a>
+						</li>
+					
+						<li>
+							<a href="#" target="_blank">
+								 <span>Instagram</span>
+							</a>
+						</li>
+					
+						<li>
+							<a href="#" target="_blank">
+								<span>Pinterest</span>
+							</a>
+						</li>
+					
+						<li>
+							<a href="#" target="_blank">
+								<span>BlogLovin</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+	</div>
+		
+	<!-- footer Ends Here-->
+	<!-- Copyright Starts Here-->
+
+	<div id="footer-bottom">
+		<div class="container">
+			<div id="footer-bottom-inner">
+				<p>&copy; 2017. Created By Noor Mohammad - ICT Semester Project</p>
+			</div>	
+		</div>
+	</div>
+	
+	<!-- Copyright Ends Here-->	
+
+</footer>
+
+</body>
+</html>

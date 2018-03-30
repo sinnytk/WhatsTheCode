@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Facebook</title>
+	<style>
+
+/*CSS stylesheet here*/
+	
+body 
+{
+	width: 100%; /*Specifies the width for the entire body*/
+	margin: auto; /*specifies the distance from all four margins*/
+	font-family: arial; /*sets the font of the entire body*/
+	background: linear-gradient(white, #D3D8E8) no-repeat; /*sets the background of the body*/
+
+}
+
+#fb-header /*select the division with id of 'fb-header'*/
+{
+	background: #3b5998; /*sets the background colour*/
+	height: 95px; /*specifies the height*/
+	width: 100%; /*specifies the width*/
+}
+#fb-header img{
+	margin-left: 24%;/*specifies the distance from left margin*/
+
+}
+
+#login
+{
+	float: right;/*moves the contents of this specific division to right*/
+	margin-top: .5%;/*specifies the distance from top margin*/
+	width: 50%;/*specifies the width*/	
+}
+#log{
+	margin-top: 2%;/*specifies the distance from top margin*/
+	margin-left: 15%;/*specifies the distance from left margin*/
+}
+.e1
+{
+	width: 130px;/*specifies the width*/
+	height: 17px; /*specifies the height*/
+	margin-left: 0px;/*specifies the distance from left margin*/
+	border: 0.5px solid black;/*specifies the border's width and type*/
+}
+#img1
+{
+	height: 80px; /*specifies the height*/
+	margin-left: 16.4%;/*specifies the distance from left margin*/
+	margin-top: 15px;/*specifies the distance from top margin*/
+}
+.e2
+{
+	background-color: #4267b2;/*sets the background colour*/
+	color: white;/*sets the text colour*/
+	box-shadow: 0px .5px 1px black;/*specifies the container's type*/
+	border: 0px;/*specifies the border's width*/
+
+}
+.l1
+{
+	font-size: 13px;/*sets the font size*/
+	color: white;/*sets the text colour*/
+}
+#container{
+	left: 0;
+	right: 0;
+	margin:auto;
+	width: 85%;
+	height: 40em;
+}
+#s1
+{
+	width: justify;/*specifies the width*/
+	height: 50em; /*specifies the height*/
+	float: left;/*moves the contents of this specific division to left*/
+	height: 350px;/*specifies the height*/
+	overflow: hidden;
+    white-space: nowrap;
+}
+#s1 img{
+}
+#s2
+{
+	width: justify;/*specifies the width*/
+	float: right;/*moves the contents of this specific division to right*/
+	border: none;/*specifies that there should be no border*/
+	margin-bottom: 2%;/*specifies the distance from bottom margin*/
+	overflow: hidden;
+    white-space: nowrap;
+}
+@media screen and (max-device-width: 1080px) {
+  #container {
+    width: 60%;
+  }
+}
+
+
+.h1
+{
+	color: #0e385f;/*sets the text colour*/
+    font-size: 20px;/*sets the font size*/
+    font-weight: bold;/*sets the font type*/
+    line-height: 29px;/*specifies the lines' height*/
+    margin-top: 40px;/*specifies the distance from top margin*/
+    word-spacing: -1px;/*specifies the spaces between each word*/
+}
+#log{
+	width: 300px;/*specifies the width*/
+	height: 50px; /*specifies the height*/
+	
+}
+
+#signup,#signup1,#signup2
+{
+	margin-bottom: 10px;/*specifies the distance from bottom margin*/
+	padding: 3px;/*specifies the distance of the internal contents*/
+	height: 32px; /*specifies the height*/
+	border-width: 1px;/*specifies the border's width*/
+	border-radius: 5px;/*specifies that the corner's points should be circular*/
+	font-size: 18px;/*sets the font size*/
+	margin-right: 0px;/*specifies the distance from right margin*/
+
+}
+#signup2
+{
+	width: 60%;/*specifies the width*/
+}
+#signup, #signup1
+{
+	width: 25%;/*specifies the width*/
+}
+
+
+#date{
+	width: 4em;/*specifies the width*/
+	height: 2em; /*specifies the height*/
+}
+#month{
+	width: 5em;/*specifies the width*/
+	height: 2em; /*specifies the height*/
+}
+#year{
+	width: 4.2em;/*specifies the width*/
+	height: 2em;/*specifies the height*/
+}
+#date,#month,#year{
+	margin-left: -2px;/*specifies the distance from left margin*/
+}
+.gender{
+	font-size: 21px;/*sets the font size*/
+}
+#createacc{
+	color: white;/*sets the text colour*/
+	border: 1px solid transparent;/*specifies the border's width and type*/
+	text-shadow: 0 1px 2px rgba(0,0,0,.5);/*specifies the text's type*/
+	border-radius: 5px;/*specifies that the corner's points should be circular*/
+	cursor: pointer;/*specifies the cursor's type*/
+	background: linear-gradient(#67ae55, #578843);/*specifies the background's colour*/
+	background-color: #69a74e;/*sets the background colour*/
+	box-shadow: inset 0 1px 1px #a4e388;/*specifies the container's type and style*/
+ 	min-width: 194px;/*specifies the minimum width*/
+ 	font-size: 19px;/*sets the font size*/
+    padding: 7px 20px;/*specifies the distance of the internal contents*/
+}
+
+	</style>
+	</head>
+<body>
+
+<!-- Facebook's login's Header starts here including the logo and inputs -->
+
+<header id="fb-header">
+	<div id="container">
+<img src="logo.png" id="img1">
+	<div id="login">
+		<div id="log">
+			<div id="in" style="float: left;">
+				<label class="l1">Email or Phone</label><br><input type="text" name="email" class="e1"> 
+			</div>
+			<div id="in" style="float: right;">
+				<label class="l1">Password</label><br><input type="password" name="psw" class="e1">
+			</div>
+			<input type="submit" name="Login" value="Log in" class="e2" align="right">
+		</div>
+		
+	</div>
+	</div>
+</header> 
+
+<!-- Facebook's login's Header ends here -->
+
+<!-- Facebook's login's first half starts here including the picture and text -->
+<div id="container">
+<section id="s1">
+	<h2 class="h1">Facebook helps you connect and share with the<br> people in your life.</h2>
+		<img src="pic1.png">
+</section>
+
+<!-- Facebook's login's first half ends here including the picture and text -->
+
+<!-- Facebook's login's second half starts here including the form for creating a new account -->
+
+<section id="s2">
+
+<!-- Table tag is used for perfect alignment of the inputs -->
+
+<table border="0" style="border-spacing: 0px;" cellpadding="0" cellpadding="0">
+	<tr>
+		<td colspan="2"><h1 style="font-size: 36px; color: #2C2E2D ;">Create an account</h1></td>
+	</tr>
+
+	<tr>
+		<td colspan="2"><p style="color: #1d2129; font-size: 19px; margin-top: 0px;">It's free and always will be.</p></td>
+	</tr>
+
+<!-- Placeholder attribute is used to specify which type of input should be entered -->
+
+	<tr>
+		<td><input id="signup" placeholder="First Name" type="text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input id="signup1" placeholder="Surname" type="text"></td>
+
+	</tr>
+
+	<tr>
+		<td colspan="2"><input id="signup2" placeholder="Mobile number or email address"  type="text"></td>
+	</tr>
+
+	<tr>
+		<td colspan="2"><input id="signup2" placeholder="New password"  type="text"></td>
+	</tr>
+
+	<tr>
+		<td><p style="color: #1d2129; font-size: 19px;">Birthday</p></td>
+	</tr>
+
+<!-- Select tag is used to create a variety of options to select from -->
+
+	<tr>
+		<td><select name="date" id="date">
+			<option>1 </option>
+  			<option>2 </option>
+  			<option>3 </option>
+  			<option>4 </option>
+  			<option>5 </option>
+  			<option>6 </option>
+  			<option>7 </option>
+  			<option>8 </option>
+  			<option>9 </option>
+  			<option>10 </option>
+  			<option>11 </option>
+  			<option>12 </option>
+  			<option>13 </option>
+  			<option>14 </option>
+  			<option>15 </option>
+  			<option>16 </option>
+  			<option>17 </option>
+  			<option>18 </option>
+  			<option>19 </option>
+  			<option>20 </option>
+  			<option>21 </option>
+  			<option>22 </option>
+  			<option>23 </option>
+  			<option>24 </option>
+  			<option>25 </option>
+  			<option>26 </option>
+  			<option>27 </option>
+  			<option>28 </option>
+  			<option>29 </option>
+  			<option>30 </option>
+  			<option>31 </option>
+		</select>
+		<select name="month" id="month">
+			<option>Jan</option>
+			<option>Feb</option>
+			<option>Mar</option>
+			<option>Apr</option>
+			<option>May</option>
+			<option>Jun</option>
+			<option>Jul</option>
+			<option>Aug</option>
+			<option>Sep</option>
+			<option>Oct</option>
+			<option>Nov</option>
+			<option>Dec</option>
+		</select>
+		<select name="year" id="year">
+			<option value="2007">2007</option>
+			<option value="2006">2006</option>
+			<option value="2005">2005</option>
+			<option value="2004">2004</option>
+			<option value="2003">2003</option>
+			<option value="2002">2002</option>
+			<option value="2001">2001</option>
+			<option value="2000">2000</option>
+			<option value="1999">1999</option>
+			<option value="1998">1998</option>
+			<option value="1997">1997</option>
+			<option value="1996">1996</option>
+			<option value="1995">1995</option>
+			<option value="1994">1994</option>
+			<option value="1993">1993</option>
+			<option value="1992">1992</option>
+			<option value="1991">1991</option>
+			<option value="1990">1990</option>
+			<option value="1989">1989</option>
+			<option value="1988">1988</option>
+			<option value="1987">1987</option>
+			<option value="1986">1986</option>
+			<option value="1985">1985</option>
+			<option value="1984">1984</option>
+			<option value="1983">1983</option>
+			<option value="1982">1982</option>
+			<option value="1981">1981</option>
+			<option value="1980">1980</option>
+			<option value="1979">1979</option>
+			<option value="1978">1978</option>
+			<option value="1977">1977</option>
+			<option value="1976">1976</option>
+			<option value="1975">1975</option>
+			<option value="1974">1974</option>
+			<option value="1973">1973</option>
+			<option value="1972">1972</option>
+			<option value="1971">1971</option>
+		</select></td>
+	</tr>
+	<tr><td>&nbsp&nbsp</td></tr>
+	<tr><td><input type="radio"><label class="gender">Female</label>&nbsp &nbsp&nbsp<input type="radio"><label class="gender">Male</label></td></tr>
+	<tr><td>&nbsp&nbsp</td></tr>
+	<tr><td style="font-size: 10px; line-height: 12px; color: grey">By clicking Create an account, you agree to our Terms<br>and confirm that you have read our Data Policy, including our Cookie<br> Use Policy. You may receive SMS message notifications from<br> Facebook and can opt out at any time.</td></tr>
+	<tr><td>&nbsp&nbsp</td></tr>
+	<tr><td><button id="createacc">Create an account</button></td></tr>
+</table>
+</section>
+</div>
+
+<!-- Facebook's login's second half ends here including the form for creating a new account -->
+
+</body>
+</html>

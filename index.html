@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>.whatsthecode.</title>
+	<link rel="stylesheet" href="CSS\index.css">
+	<link rel="stylesheet" href="CSS\font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Coming+Soon|Bungee|Open+Sans" rel="stylesheet"><!-- require internet for this -->
+	
+	<script src="jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+   		 $('#banner-text-cover').slideUp().slideDown();
+ 		$('.about').click(function(){
+ 			$('html, body').animate({
+      		  scrollTop: $("#about").offset().top
+   				 }, 2000);
+ 		}); 
+ 		$('.scope').click(function(){
+ 			$('html, body').animate({
+      		  scrollTop: $("#working").offset().top
+   				 }, 2000);
+ 		});
+ 		$('.contact').click(function(){
+ 			$('html, body').animate({
+      		  scrollTop: $("footer").offset().top
+   				 }, 2000);
+ 		});  
+    });
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="navbar-logo border">
+			<p id="logo-main">WhatsTheCode<span class="parenthesis1">(</span><span class="parenthesis2">)</span></p>
+		</div>
+	</header>
+	<section id="section-banner">
+		<div class="container border">
+			<div class="banner border">
+				<img src="images\banner-background.jpg" id="banner-image">
+				<div id="banner-text-cover" >
+						<div id="banner-text-content">
+						<span>F</span><span>r</span><span>o</span><span>n</span><span>t</span><span>-</span><span>e</span><span>n</span><span>d</span>&nbsp&nbsp
+						<span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span>
+						<br>
+						<span>m</span><span>a</span><span>d</span><span>e</span>&nbsp&nbsp
+						<span>e</span><span>a</span><span>s</span><span>i</span><span>e</span><span>r</span>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="section-navigation">
+		<div class="nav border">
+			<div class="nav-content border"><ul>
+				<li><span class="navigation-elements home">HOME</span></li>
+				<li><span class="navigation-elements about">WHO ARE WE?</span></li>
+				<li><span class="navigation-elements scope">WHAT IS THIS!?</span></li>
+				<li><span class="navigation-elements contact">CALL US, MAYBE?</span></li>
+				
+			</ul>
+			</div>
+		</div>
+		
+	</section>
+
+	<section id="about">
+		<div id="about-header">
+				
+		</div>
+		<div id="about-content">
+			<img src="images\about.png">
+			<span id="About-heading">Who are we?</span>
+			<span id="About-text">A group of students who made this website for their semester project. During our course, we fell upon many obstacles, unable to contemplate what the heck each property and tag brings to the code, hence <i><strong>WhatsTheCode</strong></i>.<br>
+				A website where you can learn front-end development, with a more practical twist. WhatsTheCode is the brianchild of five Computer Science students who think a more sophisticated approach to learning HTML and CSS is a dire requirement.</span>
+			
+		</div>
+
+
+	</section>
+	<section id="working">
+		<div id="working-header">
+
+		</div>
+		<div id="working-content">
+			<span id="Working-heading">How does it work?</span><br><br>
+			<span id="Working-text">This is encapsulation of what we wish we had<br>when we were learning web development.<br> We have scoured the internet for the best of the resources<br> that'll help anyone tackle their shortcomings in web development.</span>
+		</div>
+	</section>
+	<section>
+		<div id="designs">
+		<a href="index2.html"><button id="designs-button">Awesome layouts here!</button></a>
+		</div>
+	</section>
+<footer>
+	<div class="container">
+		<div class="navbar-logo">
+			<p id="logo-main">WhatsTheCode<span class="parenthesis1">(</span><span class="parenthesis2">)</span></p>
+		</div>
+		<div id="vr">
+		</div>
+		<div id="left-half-form">
+		<form id="cf">
+			<input type="text" name="name" class="cf-input" placeholder="Name">
+			<input type="email" name="email" class="cf-input" placeholder="Email">
+			<input type="text" name="subject" class="cf-input" placeholder="Subject of query">
+		</form>
+		</div>
+		<div id="right-half-form">
+		<form id="cf">
+			  <textarea name="message" type="text" id="cf-message" placeholder="Enter your message here"></textarea>
+ 		</form>
+		</div>
+		<div id="form-send">
+			<button id="button-send">Send</button>
+		</div>
+		<div id="social">
+			<ul>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+		</div>
+	</div>
+
+</footer>
+</body>
+
+</html>

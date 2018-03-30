@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>madebytemple</title>
+	<script>
+		
+// The function changeimg is used to change each pic on-clicking the image on webpage.
+
+		function changeimg()
+		{
+			var image = document.getElementById("pic")
+			if(image.getAttribute('src') == "img/img1.jpg")
+			{
+				image.src = "img/img2.jpg"
+			}
+			else if(image.getAttribute('src') == "img/img2.jpg")
+			{
+				image.src = "img/img3.jpg"
+			}
+			else if(image.getAttribute('src') == "img/img3.jpg")
+			{
+				image.src = "img/img4.jpg"
+			}
+			else if(image.getAttribute('src') == "img/img4.jpg")
+			{
+				image.src = "img/img5.jpg"
+			}
+			else if(image.getAttribute('src') == "img/img5.jpg")
+			{
+				image.src = "img/img6.jpg"
+			}
+			else if(image.getAttribute('src') == "img/img6.jpg")
+			{
+				image.src = "img/img7.jpg"
+			}
+			else if(image.getAttribute('src') == "img/img7.jpg")
+			{
+				image.src = "img/img8.jpg"
+			}
+			else if(image.getAttribute('src') == "img/img8.jpg")
+			{
+				image.src = "img/img9.jpg"
+			}
+			else if(image.getAttribute('src') == "img/img9.jpg")
+			{
+				image.src = "img/img1.jpg"
+			}
+		}
+	</script>
+	<style>
+
+/*CSS stylesheet here*/
+
+body
+{
+	margin: 0; /*specifies the distance from all four margin*/
+	padding: 0; /*specifies the distance of the internal contents*/
+}
+#top{
+	height: justify; /*specifies the height*/
+	width: 6em; /*specifies the width*/
+	font-weight: 600; /*sets the font size*/
+	letter-spacing: 5px; /*specifies the space between each letter of text*/
+	font-size: 1.5em; /*sets the font size*/
+	text-align: center; /*aligns the text in center*/
+	margin-left: 10%; /*specifies the distance from left margin*/
+	margin-top: 1%; /*specifies the distance from top margin*/
+}
+
+#top-heading
+{
+
+	font-family: arial; /*sets the font type*/
+}
+header
+{
+	height: justify; /*specifies the height*/
+	width: 100%; /*specifies the width*/
+	position: fixed; /*specifes that the border's position should be fixed*/
+	border-top: 5px solid black; /*specifies the border's width and type*/
+
+}
+
+#nav
+{
+	height: justify; /*specifies the height*/
+	width: justify; /*specifies the width*/
+	margin-right: 2em; /*specifies the distance from left margin*/
+}
+#nav ul{
+	list-style-type: none; /*specifies that there should be no styling for list tag*/
+	float: right; /*moves the contents of this specific division to right*/
+}
+#nav li{
+		margin-right: 10px; /*specifies the distance from left margin*/
+		float: left; /*moves the contents of this specific division to left*/
+}
+.a1
+{
+	text-decoration: none; /*removes the anchor's underline*/
+	color: #7B7A7A  ; /*sets the text colour*/
+	font-size: 1em; /*sets the font size*/
+	letter-spacing: 1px; /*specifies the space between each letter of text*/
+}
+.p1
+{
+	font-size: 18px; /*sets the font size*/
+	margin-bottom: 1%; /*specifies the distance from bottom margin*/
+	font-size: 1em; /*sets the font size*/
+}
+#info
+{
+	float: right; /*moves the contents of this specific division to right*/
+	height: justify; /*specifies the height*/
+	width: justify; /*specifies the width*/
+	margin-right: 90px; /*specifies the distance from right margin*/
+	display: block;
+}
+section{
+		margin-bottom: 30%; /*specifies the distance from bottom margin*/
+}
+
+.a1:hover, .a2:hover, .a3:hover
+{
+	color: black; /*sets the text colour*/
+}
+.a2,.a3
+{
+	color: #7B7A7A; /*sets the text colour*/
+	text-decoration: none; /*removes the anchor's underline*/
+}
+.a3
+{
+	margin-left: 80px; /*specifies the distance from left margin*/
+	letter-spacing: 1px; /*specifies the space between each letter of text*/
+}
+input{
+	border-radius: 100%; /*specifies that the corner's points should be circular*/
+	border: none; /*specifies that there should be no border*/
+	outline: none; /*specifies that there should be no outline to the input tag*/
+	height: 1em; /*specifies the height*/
+}
+footer{
+	left: 0;
+	right: 0;
+	margin: auto; /*specifies the distance from all four margins*/
+	width: 80%; /*specifies the width*/
+}
+	</style>
+</head>
+<body>
+
+<!-- Header of the webpage starts here which includes navigation bar and heading. -->
+
+<header>
+<div id="top">
+<span id="top-heading">TEMPLE</span>
+</div>
+
+<div id="nav">
+	<ul>
+	<li><a href="#" class="a1">WORK</a></li>
+	<li><a href="#" class="a1">ABOUT</a></li>
+	<li><a href="#" class="a1">CONTACT</a></li>
+	</ul>
+</div>
+
+</header>
+
+<!-- Header of the webpage ends here. -->
+
+<!-- Section starts here which includes the sliding image, which changes on clicking the image, and text -->
+
+<section>
+	<img src="img/img1.jpg" id="pic" style="height: 100%; width: 100%;" onclick="changeimg()">
+
+
+<div id="info">
+	<p class="p1">Temple is a design practice that works with clients in the cultural sectors and creates design-<br>related products including fonts and apparel.</p>
+	<p class="p1">Find out more <a href="#" class="a2">about</a> us, see our <a href="#" class="a2">work</a> or write to us at <a href="#" class="a2">info@madebytemple.com</a>.</p>
+</div>
+</section>
+
+<!-- Section ends here -->
+
+<!-- Footer starts here which includes dummy links -->
+
+<footer>
+	<hr>
+	<a href="#" class="a3">EMAIL</a><br>
+	<a href="#" class="a3">TWITTER</a><br>
+	<a href="#" class="a3">TUMBLR</a><br>
+	<a href="#" class="a3">BEHANCE</a><br>
+</footer>
+
+<!-- Footer ends here -->
+
+</body>
+</html>

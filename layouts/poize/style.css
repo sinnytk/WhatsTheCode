@@ -1,0 +1,300 @@
+html{
+	font-family:sans-serif
+}
+
+ul{
+	list-style:none;
+	margin:0;padding:0
+}
+
+h3{
+	margin:0;padding:0
+}
+
+p{
+	margin:0;padding:0
+}
+
+body{
+	font-size:13px;
+	line-height:1.8;
+	color: black;
+}
+
+.menu{
+	text-align:center
+}
+
+.page-content{
+	border-spacing:1px
+}
+
+.container{
+	margin: auto;
+	padding:0px;
+	width:1140px;
+	box-sizing:border-box;}*,::before{-webkit-box-sizing:border-box;}
+
+.row{
+	margin-left:-15px;
+	margin-right:-15px
+}
+.row:after{
+	content:" ";
+	display:table;
+	clear:both
+}
+
+.clearfix:after{
+	content:" ";
+	display:block;
+	clear:both;
+	}[class*=col-]{position:relative;min-height:1px;padding:0 15px}
+
+.image{
+	display:block;
+	width:100%
+}
+
+.col-xlarge-8{
+	width:66%;
+	float:left
+	}
+
+.col-xlarge-6{
+	width:50%;
+	float:left
+}
+.col-xlarge-4{
+	width:33%;
+	float:left
+}
+
+.col-xlarge-8 h3 a{
+	font-size:21px;
+	line-height:29px
+}
+.col-xlarge-6 h3 a{
+	font-size:21px;
+	line-height:29px
+}
+
+.font-crimson-reg{
+	font-family:'Crimson Text',serif;
+	font-weight:400;
+}
+
+.primary-button{
+	display:inline-block;
+	font-size:11px;
+	color:#d29aa1;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	background-color:#ffe9ec;
+	border:1px solid;
+	border-radius:30px;
+	padding:10px 25px
+} 
+ 
+.primary-button:hover{
+	background-color:#e28694;
+	color:#fff;
+}
+ 	
+#header-search input[type=text]{
+	margin-top:5px;
+	margin-left:50px;
+	border:0;
+	float:left;
+	height:20px;
+	font-size:15px;
+	line-height:14px;	
+}
+
+#header-search .fa{
+	float:left;
+	font-size:15px;
+	margin-top:5px;
+}
+ 	
+#header-navigation{
+	padding:0;
+	background-color:#ffe9ec;
+	border:1px solid #ffe9ec;	
+}
+
+.menu li{
+	display:inline-block
+}
+.menu .menu-item a{
+	font-size:12px;
+	line-height:20px;
+	letter-spacing:1.5px;
+	text-transform:uppercase;
+	margin:0px;
+	padding:15px;
+	text-decoration:none;
+	display:inline-block;
+	clear:both;
+}
+.sub-menu{
+	position:absolute;
+	visibility:hidden;
+}
+ 
+#footer-social li{
+	display:inline-block;
+	line-height: 60px;
+
+}
+#footer-social-inner{
+	background-color:#ffe9ec;
+	text-align:center;
+}
+#footer-social li a{
+	font-size:11px;
+	color:#e28694;
+	line-height:15px;
+	text-align:center;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	margin:0px;
+	padding:15px;
+	text-decoration: none;
+}
+
+
+#footer-bottom{
+	font-size:12px;
+	color:#757575;
+	margin-top: 15px;
+	text-align:center;
+	letter-spacing:.5px
+	}
+
+
+#main-content{
+	padding-top:40px
+}
+
+.newsletter-section{
+	margin-bottom:40px
+}
+
+.page-newsletter-text{
+	float:left;
+}
+
+.first{
+	font-family:'Crimson Text',serif;
+	font-size:20px;
+	line-height:16px
+}
+.second{
+	font-family:'Open Sans',sans-serif;
+	margin-top:13px
+}
+
+.page-newsletter-form{
+	float:right;
+	margin-top:5px
+}
+
+input{
+	font-family:'Crimson Text',serif
+}
+
+.page-newsletter input[type=email]{
+	width:300px;
+	border:1px solid #fff;
+	font-size:16px;
+	color: black;
+	line-height:25px
+}
+
+.sidebar-widget h3{
+	font-size:12px;
+	color:#757575;
+	line-height:30px;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	text-align:center;
+	margin-bottom:20px
+}
+
+.sidebar-widget input{
+	width:100%;
+	height:40px;
+	padding-left:15px;
+	border:1px;
+	font-family:'Crimson Text',serif;
+	font-size:16px
+}
+
+.sidebar-widget input[type=submit]{
+	font-size:11px;
+	color:#d29aa1;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:1.5px;
+	background-color:#ffe9ec;
+	border:0px;
+	border-radius:30px;
+	display:inline-block;
+	padding:10px;
+	margin: 25px;
+	font-family:Lato,sans-serif;
+}
+
+.widget_poise_latest_posts_widget h4{
+	font-size:17px;
+	font-family:'Crimson Text',serif;
+	color:#757575;
+	font-weight:100
+}
+
+.promo-box-item{
+	position:relative;
+	display:block;
+	margin-bottom:40px
+}
+
+.promo-item-inside{
+	color:#fff;
+	text-align:center;
+	position:absolute;
+	left: 0;
+	right: 0;
+}
+.promo-item-padding{
+	padding:12px;
+}
+
+.promo-inside-center{
+	top:40%
+	}
+
+.promo-item-inside h3{
+	font-family:'Crimson Text',serif;
+	font-weight:100;
+	font-size:21px;
+	line-height:22px;
+	display:inline-block;
+}
+
+.post-list-item{
+	margin-bottom:80px;
+}
+
+.post-list-item h3{
+	margin-bottom:10px
+}
+.post-list-item h3 a{
+	font-size:26px;
+	color: black;
+	text-decoration:none;
+}
+.post-list-item h3 a:hover{
+	color:#eabbc2
+}
